@@ -18,9 +18,8 @@
     },
     "homepage": "https://github.com/DMB-LEB/danielle-social-network-api",
     "dependencies": {
-      "express": "^4.17.3",
-      "moment": "^2.29.2",
-      "mongoose": "^5.13.14"
+      "express": "^4.17.1",
+      "mongoose": "^6.2.1"
     },
     "description": "## Description: Social network API utilizing NoSQL"
   }
