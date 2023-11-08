@@ -111,4 +111,4 @@ const thoughtController = {
 
 
   
-export default thoughtController;
+module.exports = thoughtController;
