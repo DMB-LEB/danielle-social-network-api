@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 
-connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
