@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/challenge18db', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
@@ -18,4 +18,4 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/', {
   console.log('Error connecting to DB:', err)
 });
 
-app.listen(PORT, () => console.log(`Connected to localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Connected to localhost: ${PORT}`));
